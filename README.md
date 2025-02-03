@@ -21,7 +21,7 @@ Use your knowledge of object-oriented programming, two-dimensional (2D) arrays, 
 
 Put and image of your UML Diagram here. Upload the image of your UML Diagram to your repository, then use the Markdown syntax to insert your image here. Make sure your image file name is one work, otherwise it might not properly get display on this README.
 
-![UML Diagram for my project](nameOfImageFileHere.png)
+![UML Diagram for my project](image.png)
 
 ## Video
 
@@ -33,11 +33,16 @@ Record a short video of your story to display here on your README. You can do th
 - Upload the thumbnail image to your repo.
 - Use the following markdown
 
-[![Thumbnail for my projet](nameOfThumbnail.png)](youtube-URL-here)
-
+[![alt text](image-1.png)](https://youtu.be/40JXPcxIkL0)
 ## Story Description
 
 Write a description of the story that your animation showcases. Give addional context for your story here in the case your animation is more abstract and only has images and little text. Lastly, include what data in your project is represented in 2D arrays and how those directly relate to the story your animation showcase.
+
+My story is the "4 Cs" process of scrapbooking, first is cut, then capture, then collect, then create. It shows the steps taken that can help to create hold many memories of small happy moments.  Scrapbooking is an important hobby to me for that reason. In my project the 2D arrays in the theater runner are colors and captions. Throughout the rest of my code 2D arrays are used to represent the pixels in each image.
 ## Image Filter Analysis
 
 Choose at least 2 filters uses in your animation to explain how the pixels are modified. If you created a new image filter that was not one of the ones from this unit, make sure to explain and analyze that filter(s) before choosing ones that came from this unit.
+
+1. Rain - This filter goes through each column and randomly chooses where to start. Then the pixel above the current one's color gets stored, and becomes the color for the rest of the pixels under it until the provided length is met. This filter chooses its starting poitns randomly, however it makes sure there is a pixel above it and length pixels below it as well.
+
+2. Threshold (tweaked to hold arguments)- This filter gets the average of all the color values of each pixel. If it is below the provided color, it changes to color 1, otherwise, it changes to color 2.
